@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    background-color: blue;
+    height: 13vh;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 18%;
+}
+
+.hamburger {
+    position: absolute;
+    right: 1.3rem;
+    top: 4.6vh;
+    cursor: pointer;
+    padding: 6px 10px;
+}
+
+.hamburger .linha-hamburger {
+    height: 3px;
+    width: 26px;
+    margin-bottom: 5px;
+    display: block;
+    background-color: #ffffff;    
+}
+
+.nav-list-dropdown {
+    position: fixed;
+    background-color: blue;
+    height: 87vh;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 1s ease-in;
+    z-index: 1;
+    border-top: 1px solid #000000;
+    margin-top: 13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list-dropdown.active {
+    transform: translateX(0);
+}
+
+.nav-list-dropdown li {
+    padding: 2rem 3rem;
+}
+
+.nav-list-dropdown li a {
+    color: #ffffff;
+    font-family: "Dancing Script", Helvetica;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    padding: 2rem 3rem;
+}
