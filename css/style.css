@@ -58,7 +58,7 @@ header img {
     transition: transform 1s ease-in;
     z-index: 1;
     border-top: 1px solid #000000;
-    margin-top: 13vh;
+    /* margin-top: 13vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
