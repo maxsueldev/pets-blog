@@ -52,13 +52,13 @@ header img {
 .nav-list-dropdown {
     position: fixed;
     background-color: blue;
-    height: 87vh;
+    height: 80vh;
     width: 100%;
     transform: translateX(100%);
     transition: transform 1s ease-in;
     z-index: 1;
     border-top: 1px solid #000000;
-    /* margin-top: 13vh; */
+    margin-top: 13vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
