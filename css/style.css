@@ -70,13 +70,13 @@ header img {
 }
 
 .nav-list-dropdown li {
-    padding: 0 3rem;
+    padding: 2rem 3rem;
 }
 
 .nav-list-dropdown li a {
     color: #ffffff;
     font-family: "Dancing Script", Helvetica;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     letter-spacing: .2rem;
-    padding: 0 3rem;
+    padding: 2rem 3rem;
 }
