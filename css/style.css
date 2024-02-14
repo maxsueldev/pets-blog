@@ -16,6 +16,7 @@ li {
 
 body {
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -104,55 +105,87 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 2.5rem 0;
+    padding: 2rem 0;
+}
+
+.artigos h1 {
+    font-family: "Dancing Script", Helvetica;
+    font-size: 3rem;
 }
 
 .artigo {
-    max-width: 80%;
-    border: 2px solid #000000;
-    border-radius: 2rem;
+    max-width: 75%;
+    border: 1px solid #eaeaeb;
     text-align: center;
-    padding: 1rem 1.2rem;
+}
+
+.artigo .titulo {
+    padding: 1rem 1.4rem .5rem 1.4rem;
+}
+
+.artigo .titulo a {
+    font-size: 1.2rem;
+    color: #000000;
 }
 
 .artigo .subtitulo, .artigo .info {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .artigo .subtitulo {
-    gap: 1.2rem;
-    margin: .2rem 0 .7rem 0;
+    gap: 1rem;
+    padding: .4rem 0;
+}
+
+.artigo .subtitulo .data {
+    font-size: .71rem;
+}
+
+.artigo .subtitulo .tag {
+    font-size: .7rem;
+    border: 1px solid #A050BE;
+    color: #A050BE;
+    padding: .2rem .6rem;
 }
 
 .artigo .detalhes {
-    padding: 1rem 0;
+    padding: 0 1.4rem 1.4rem 1.4rem;    
 }
 
 .artigo .detalhes p {
     text-align: left;
-    margin-bottom: .7rem;
+    font-size: .85rem;
+    line-height: 1.2rem;
+    margin-bottom: .9rem;
 }
 
 .artigo .detalhes img {
     max-width: 40%;
     float: left;
-    margin-right: .7rem;
+    margin-right: .9rem;
+}
+
+.artigo .detalhes a {
+    background-color: #F8BC52;
+    color: #A050BE;
+    padding: .45rem .6rem;
 }
 
 .artigo .info {
-    border: 1px solid #000000;
-    border-radius: 2rem;
+    border-top: 1px solid #eaeaeb;
     width: 100%;
-    padding: .2rem 0;
+    font-size: .8rem;
 } 
 
 .artigo .info .autor, .artigo .info .comentarios {
     width: 100%;
+    padding: .3rem 0;
 }
 
 .artigo .info .autor {
-    border-right: 1px solid #000000;
+    border-right: 1px solid #eaeaeb;
 }
 
 footer {
@@ -160,7 +193,7 @@ footer {
 }
 
 footer img {
-    width: 26%;
+    width: 18%;
     display: block;
     margin: 0 auto;
 }
