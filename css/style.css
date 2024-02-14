@@ -71,7 +71,7 @@ header img {
 }
 
 .nav-list-dropdown li {
-    padding: 1rem 3rem;
+    padding: 1.3rem 3rem;
 }
 
 .nav-list-dropdown li a {
@@ -79,5 +79,5 @@ header img {
     font-family: "Dancing Script", Helvetica;
     font-size: 2rem;
     letter-spacing: .2rem;
-    padding: 1rem 3rem;
+    padding: 1.3rem 3rem;
 }
