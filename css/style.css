@@ -47,6 +47,19 @@ header img {
     margin-bottom: 5px;
     display: block;
     background-color: #ffffff;    
+    transition: all 1s ease-in;
+}
+
+.hamburger.active .linha-hamburger:first-child {
+    transform: rotate(45deg) translate(11px, 10%);
+}
+
+.hamburger.active .linha-hamburger:last-child {
+    transform: rotate(-45deg) translate(11px, 10%);
+}
+
+.hamburger.active .linha-hamburger:nth-child(2) {
+    transform: scale(0);
 }
 
 .nav-list-dropdown {
