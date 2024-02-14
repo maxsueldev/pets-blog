@@ -20,7 +20,7 @@ body {
 
 header {
     background-color: blue;
-    height: 13vh;
+    height: 10vh;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -30,13 +30,13 @@ header {
 }
 
 header img {
-    width: 18%;
+    width: 15%;
 }
 
 .hamburger {
     position: absolute;
     right: 1.3rem;
-    top: 4.6vh;
+    top: 3.5vh;
     cursor: pointer;
     padding: 6px 10px;
 }
@@ -52,17 +52,18 @@ header img {
 .nav-list-dropdown {
     position: fixed;
     background-color: blue;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     transform: translateX(100%);
     transition: transform 1s ease-in;
     z-index: 1;
     border-top: 1px solid #000000;
-    margin-top: 13vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
+    padding: 5rem 0;
 }
 
 .nav-list-dropdown.active {
