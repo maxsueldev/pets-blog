@@ -63,7 +63,7 @@ header img {
     flex-direction: column;
     /* justify-content: space-around; */
     align-items: center;
-    padding: 5rem 0;
+    padding: 1rem 0;
 }
 
 .nav-list-dropdown.active {
