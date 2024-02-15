@@ -1,6 +1,6 @@
 aside {
     max-width: 80%;
-    border: 2px solid var(--cor-borda);
+    border: 2px solid var(--bg-botoes);
     padding: 1rem 1.4rem;
     margin: 0 auto 1.6rem auto;
 }
@@ -27,8 +27,8 @@ aside span {
 }
 
 .lista-top-posts li:nth-child(2) {
-    border-top: 2px solid var(--cor-borda);
-    border-bottom: 2px solid var(--cor-borda);
+    border-top: 2px solid var(--bg-botoes);
+    border-bottom: 2px solid var(--bg-botoes);
 }
 
 .lista-top-posts li img {

@@ -1,9 +1,20 @@
 footer {
-    padding-bottom: 1.2rem;
+    display: var(--flex);
+    flex-direction: column;
+    justify-content: var(--center);
+    align-items: var(--center);
+    gap: .6rem;
+    padding-bottom: 1rem;
 }
 
 footer img {
     width: 15%;
-    display: block;
-    margin: 0 auto;
+}
+
+footer .social {
+    padding: .3rem;
+}
+
+footer .social img {
+    width: 32px;
 }
