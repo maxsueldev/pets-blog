@@ -1,99 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('./imports/reset.css');
+@import url('./imports/header.css');   
+@import url('./imports/footer.css');                                                                                     
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;    
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
+/* fazer variáveis ... */
 
 body {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    background-color: blue;
-    height: 10vh;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header img {
-    width: 15%;
-}
-
-.hamburger {
-    position: absolute;
-    right: 1.3rem;
-    top: 3.5vh;
-    cursor: pointer;
-    padding: 6px 10px;
-}
-
-.hamburger .linha-hamburger {
-    height: 3px;
-    width: 26px;
-    margin-bottom: 5px;
-    display: block;
-    background-color: #ffffff;    
-    transition: all 1s ease-in;
-}
-
-.hamburger.active .linha-hamburger:first-child {
-    transform: rotate(45deg) translate(12px, 10%);
-}
-
-.hamburger.active .linha-hamburger:last-child {
-    transform: rotate(-45deg) translate(11px, 10%);
-}
-
-.hamburger.active .linha-hamburger:nth-child(2) {
-    transform: scale(0);
-}
-
-.nav-list-dropdown {
-    position: fixed;
-    background-color: blue;
-    height: 100vh;
-    width: 100%;
-    transform: translateX(100%);
-    transition: transform 1s ease-in;
-    z-index: 1;
-    border-top: 1px solid #000000;
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    align-items: center;
-    padding: 1.5rem 0;
-}
-
-.nav-list-dropdown.active {
-    transform: translateX(0);
-}
-
-.nav-list-dropdown li {
-    padding: 1.3rem 3rem;
-}
-
-.nav-list-dropdown li a {
-    color: #ffffff;
-    font-family: "Dancing Script", Helvetica;
-    font-size: 2rem;
-    letter-spacing: .2rem;
-    padding: 1.3rem 3rem;
 }
 
 main {
@@ -114,8 +28,8 @@ main {
 }
 
 .artigo {
-    max-width: 75%;
-    border: 1px solid #eaeaeb;
+    max-width: 80%;
+    border: 2px solid #eaeaeb;
     text-align: center;
 }
 
@@ -170,11 +84,12 @@ main {
 .artigo .detalhes a {
     background-color: #F8BC52;
     color: #A050BE;
+    font-size: .8rem;
     padding: .45rem .6rem;
 }
 
 .artigo .info {
-    border-top: 1px solid #eaeaeb;
+    border-top: 2px solid #eaeaeb;
     width: 100%;
     font-size: .8rem;
 } 
@@ -185,15 +100,5 @@ main {
 }
 
 .artigo .info .autor {
-    border-right: 1px solid #eaeaeb;
-}
-
-footer {
-    padding-bottom: 1.2rem;
-}
-
-footer img {
-    width: 18%;
-    display: block;
-    margin: 0 auto;
+    border-right: 2px solid #eaeaeb;
 }

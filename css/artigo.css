@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('./imports/reset.css');
+@import url('./imports/header.css');   
+@import url('./imports/footer.css');                                                                                     
+
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding-top: 10vh;
+}
+
+.artigo {
+    padding: 2.5rem 2rem;
+}
+
+.artigo h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 200;
+}
+
+.artigo img {
+    max-width: 100%;
+    margin: 1.6rem 0;
+}
+
+.artigo p {
+    line-height: 1.5rem;
+}
