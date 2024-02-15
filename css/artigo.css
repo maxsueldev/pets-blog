@@ -14,7 +14,7 @@ main {
 }
 
 .artigo {
-    padding: 2.5rem 2rem;
+    padding: 2rem;
 }
 
 .artigo h2 {
@@ -30,6 +30,14 @@ main {
 
 .artigo p {
     line-height: 1.5rem;
+}
+
+.share {
+    padding: 0 2rem;
+}
+
+.comentarios {
+    padding: 2rem;
 }
 
 aside {
