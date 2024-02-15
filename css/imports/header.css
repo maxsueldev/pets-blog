@@ -1,12 +1,12 @@
 header {
-    background-color: #A050BE;
+    background-color: var(--cor-links);
     height: 10vh;
-    text-align: center;
+    text-align: var(--center);
     position: fixed;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: var(--width100);
+    display: var(--flex);
+    align-items: var(--center);
+    justify-content: var(--center);
     z-index: 1;
 }
 
@@ -27,8 +27,8 @@ header img {
     width: 26px;
     margin-bottom: 5px;
     display: block;
-    background-color: #ffffff;    
-    transition: all 1s ease-in;
+    background-color: var(--branco);    
+    transition: all .8s ease-in;
 }
 
 .hamburger.active .linha-hamburger:first-child {
@@ -45,18 +45,18 @@ header img {
 
 .nav-list-dropdown {
     position: fixed;
-    background-color: #A050BE;
+    background-color: var(--cor-links);
     height: 100vh;
-    width: 100%;
+    width: var(--width100);
     transform: translateX(100%);
-    transition: transform 1s ease-in;
+    transition: transform .8s ease-in;
     z-index: 1;
     border-top: 1px solid #000000;
     margin-top: 10vh;
-    display: flex;
+    display: var(--flex);
     flex-direction: column;
     /* justify-content: space-around; */
-    align-items: center;
+    align-items: var(--center);
     padding: 1.5rem 0;
 }
 
@@ -69,7 +69,7 @@ header img {
 }
 
 .nav-list-dropdown li a {
-    color: #ffffff;
+    color: var(--branco);
     font-family: "Dancing Script", Helvetica;
     font-size: 2rem;
     letter-spacing: .2rem;

@@ -4,8 +4,19 @@
 @import url('./imports/aside.css');  
 @import url('./imports/footer.css');                                                                                     
 
+:root {
+    --width100: 100%;
+    --flex: flex;
+    --center: center;
+    --cor-borda: #eaeaeb;
+    --cor-links: #A050BE;
+    --bg-botoes: #F8BC52;
+    --cinza: #d3d3d3;
+    --branco: #ffffff;
+}
+
 body {
-    width: 100%;
+    width: var(--width100);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,7 +30,7 @@ main {
 
 .artigo h2 {
     font-size: 1.8rem;
-    text-align: center;
+    text-align: var(--center);
     font-weight: 300;
 }
 
@@ -41,34 +52,34 @@ main {
 }
 
 .form-comentarios form {
-    display: flex;
+    display: var(--flex);
     flex-direction: column;
-    align-items: center;
+    align-items: var(--center);
     gap: 1.2rem;
 }
 
 .form-comentarios form input[type="text"], .form-comentarios form textarea {
-    width: 100%;
+    width: var(--width100);
     font-size: 1rem;
     padding: .4rem .8rem;
 } 
 
 .form-comentarios form .btn-enviar {
     width: 35%;
-    background-color: #F8BC52;
+    background-color: var(--bg-botoes);
     padding: .5rem;
     font-size: .9rem;
     border: none;
 }
 
 .comentarios {
-    background-color: #d3d3d3;
+    background-color: var(--cinza);
     padding: 0 2rem;
     margin-top: 1rem;
 }
 
 .comentarios .coment {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid var(--branco);
     padding: 1.2rem 0;
 }
 

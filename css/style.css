@@ -4,10 +4,19 @@
 @import url('./imports/aside.css');
 @import url('./imports/footer.css');                                                                                     
 
-/* fazer variáveis ... */
+:root {
+    --width100: 100%;
+    --flex: flex;
+    --center: center;
+    --cor-borda: #eaeaeb;
+    --cor-links: #A050BE;
+    --bg-botoes: #F8BC52;
+    --cinza: #d3d3d3;
+    --branco: #ffffff;
+}
 
 body {
-    width: 100%;
+    width: var(--width100);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,9 +25,9 @@ main {
 }
 
 .artigos {
-    display: flex;
+    display: var(--flex);
     flex-direction: column;
-    align-items: center;
+    align-items: var(--center);
     gap: 2rem;
     padding: 2rem 0;
 }
@@ -30,8 +39,8 @@ main {
 
 .artigo {
     max-width: 80%;
-    border: 2px solid #eaeaeb;
-    text-align: center;
+    border: 2px solid var(--cor-borda);
+    text-align: var(--center);
 }
 
 .artigo .titulo {
@@ -40,13 +49,13 @@ main {
 
 .artigo .titulo a {
     font-size: 1.2rem;
-    color: #A050BE;
+    color: var(--cor-links);
 }
 
 .artigo .subtitulo, .artigo .info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
 }
 
 .artigo .subtitulo {
@@ -60,8 +69,8 @@ main {
 
 .artigo .subtitulo .tag {
     font-size: .7rem;
-    border: 1px solid #A050BE;
-    color: #A050BE;
+    border: 1px solid var(--cor-links);
+    color: var(--cor-links);
     padding: .2rem .6rem;
 }
 
@@ -83,23 +92,23 @@ main {
 }
 
 .artigo .detalhes a {
-    background-color: #F8BC52;
-    color: #A050BE;
+    background-color: var(--bg-botoes);
+    color: var(--cor-links);
     font-size: .8rem;
     padding: .45rem .6rem;
 }
 
 .artigo .info {
-    border-top: 2px solid #eaeaeb;
-    width: 100%;
+    border-top: 2px solid var(--cor-borda);
+    width: var(--width100);
     font-size: .8rem;
 } 
 
 .artigo .info .autor, .artigo .info .comentarios {
-    width: 100%;
+    width: var(--width100);
     padding: .3rem 0;
 }
 
 .artigo .info .autor {
-    border-right: 2px solid #eaeaeb;
+    border-right: 2px solid var(--cor-borda);
 }
