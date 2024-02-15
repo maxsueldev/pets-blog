@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('./imports/reset.css');
-@import url('./imports/header.css');   
+@import url('./imports/header.css'); 
+@import url('./imports/aside.css');  
 @import url('./imports/footer.css');                                                                                     
 
 body {
@@ -30,4 +31,8 @@ main {
 .artigo p {
     line-height: 1.5rem;
     font-weight: 200;
+}
+
+aside {
+    display: none;
 }

@@ -1,5 +1,5 @@
 header {
-    background-color: blue;
+    background-color: #A050BE;
     height: 10vh;
     text-align: center;
     position: fixed;
@@ -10,7 +10,7 @@ header {
 }
 
 header img {
-    width: 12%;
+    width: 14%;
 }
 
 .hamburger {
@@ -44,7 +44,7 @@ header img {
 
 .nav-list-dropdown {
     position: fixed;
-    background-color: blue;
+    background-color: #A050BE;
     height: 100vh;
     width: 100%;
     transform: translateX(100%);
