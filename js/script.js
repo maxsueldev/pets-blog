@@ -16,8 +16,7 @@ const nome = document.querySelector('#nome');
 const textareaComentario = document.querySelector('#textarea-comentario');
 const divComentarios = document.querySelector('#comentarios');
 
-btnEnviarFormComent.addEventListener('textInput', e => {
-    e.key = e.data;
+btnEnviarFormComent.addEventListener('click', e => {
     e.preventDefault();
 
     if(nome.value != '' && textareaComentario.value != '') {
