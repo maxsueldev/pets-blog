@@ -16,7 +16,7 @@ const nome = document.querySelector('#nome');
 const textareaComentario = document.querySelector('#textarea-comentario');
 const divComentarios = document.querySelector('#comentarios');
 
-btnEnviarFormComent.addEventListener('click tap', (e) => {
+btnEnviarFormComent.addEventListener('click touchstart', (e) => {
     e.preventDefault();
 
     if(nome.value != '' && textareaComentario.value != '') {
