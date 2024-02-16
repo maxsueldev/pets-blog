@@ -13,15 +13,27 @@
 
     <title>Pets Blog</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive/home.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="img/logo.png" alt="logo pets blog"></a>
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="logo pets blog"></a>
         <div id="hamburger" class="hamburger">
             <span class="linha-hamburger"></span>
             <span class="linha-hamburger"></span>
             <span class="linha-hamburger"></span>
         </div>
+
+        <nav class="menu-lateral">
+            <ul class="nav-list-lateral">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Cães</a></li>
+                <li><a href="#">Gatos</a></li>
+                <li><a href="#">Pássaros</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <nav class="dropdown">
@@ -34,111 +46,112 @@
             <li><a href="#">Contato</a></li>
         </ul>
     </nav>
-
+    
     <main>
-        <section class="artigos">
-            <h1>Pets Blog</h1>
-            <article class="artigo">
-                <div class="titulo">
-                    <a href="artigos/artigo.html">Cuidados com os animais durante a quarentena</a>
-                    <div class="subtitulo">
-                        <p class="data"><i>14/02/2014</i></p>
-                        <span class="tag">Cães</span>
+        <h1>Pets Blog</h1>
+        <div class="container-flex">
+            <section class="artigos">
+                <article class="artigo">
+                    <div class="titulo">
+                        <a href="artigos/artigo.html">Cuidados com os animais durante a quarentena</a>
+                        <div class="subtitulo">
+                            <p class="data"><i>14/02/2014</i></p>
+                            <span class="tag">Cães</span>
+                        </div>
                     </div>
-                </div>
-                <div class="detalhes">
-                    <img src="img/dog.jpg" alt="Cachorro">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, tenetur. Consequatur magnam quas delectus vel! Ducimus pariatur eveniet earum incidunt?</p>
-                    <a href="artigos/artigo.html">Ler mais</a>
-                </div>
-                <div class="info">
-                    <div class="autor">By <b>Maxsuel</b></div>
-                    <div class="comentarios"><b>0</b> comentários</div>   
-                </div>
-            </article>
-            <article class="artigo">
-                <div class="titulo">
-                    <a href="artigos/artigo.html">Adotar um gato: tudo o que você precisa saber</a>
-                    <div class="subtitulo">
-                        <p class="data"><i>14/02/2014</i></p>
-                        <span class="tag">Gatos</span>
+                    <div class="detalhes">
+                        <img src="img/dog.jpg" alt="Cachorro">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, tenetur. Consequatur magnam quas delectus vel! Ducimus pariatur eveniet earum incidunt?</p>
+                        <a href="artigos/artigo.html">Ler mais</a>
                     </div>
-                </div>
-                <div class="detalhes">
-                    <img src="img/cat.jpg" alt="Gato">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, tenetur. Consequatur magnam quas delectus vel! Ducimus pariatur eveniet earum incidunt?</p>
-                    <a href="artigos/artigo.html">Ler mais</a>
-                </div>
-                <div class="info">
-                    <div class="autor">By <b>Maxsuel</b></div>
-                    <div class="comentarios"><b>3</b> comentários</div>   
-                </div>
-            </article>
-            <article class="artigo">
-                <div class="titulo">
-                    <a href="artigos/artigo.html">Cuidados com seu pet durante a pandemia</a>
-                    <div class="subtitulo">
-                        <p class="data"><i>14/02/2014</i></p>
-                        <span class="tag">Gatos</span>
+                    <div class="info">
+                        <div class="autor">By <b>Maxsuel</b></div>
+                        <div class="comentarios"><b>0</b> comentários</div>   
                     </div>
-                </div>
-                <div class="detalhes">
-                    <img src="img/pc.jpg" alt="Gato">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, tenetur. Consequatur magnam quas delectus vel! Ducimus pariatur eveniet earum incidunt?</p>
-                    <a href="artigos/artigo.html">Ler mais</a>
-                </div>
-                <div class="info">
-                    <div class="autor">By <b>Maxsuel</b></div>
-                    <div class="comentarios"><b>1</b> comentário</div>   
-                </div>
-            </article>
-            <article class="artigo">
-                <div class="titulo">
-                    <a href="artigos/artigo.html">Lojas com acessórios para pets</a>
-                    <div class="subtitulo">
-                        <p class="data"><i>14/02/2014</i></p>
-                        <span class="tag">Cães</span>
+                </article>
+                <article class="artigo">
+                    <div class="titulo">
+                        <a href="artigos/artigo.html">Adotar um gato: tudo o que você precisa saber</a>
+                        <div class="subtitulo">
+                            <p class="data"><i>14/02/2014</i></p>
+                            <span class="tag">Gatos</span>
+                        </div>
                     </div>
-                </div>
-                <div class="detalhes">
-                    <img src="img/sun.jpg" alt="Cachorro">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, tenetur. Consequatur magnam quas delectus vel! Ducimus pariatur eveniet earum incidunt?</p>
-                    <a href="artigos/artigo.html    ">Ler mais</a>
-                </div>
-                <div class="info">
-                    <div class="autor">By <b>Maxsuel</b></div>
-                    <div class="comentarios"><b>4</b> comentários</div>   
-                </div>
-            </article>
-        </section>
+                    <div class="detalhes">
+                        <img src="img/cat.jpg" alt="Gato">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, tenetur. Consequatur magnam quas delectus vel! Ducimus pariatur eveniet earum incidunt?</p>
+                        <a href="artigos/artigo.html">Ler mais</a>
+                    </div>
+                    <div class="info">
+                        <div class="autor">By <b>Maxsuel</b></div>
+                        <div class="comentarios"><b>3</b> comentários</div>   
+                    </div>
+                </article>
+                <article class="artigo">
+                    <div class="titulo">
+                        <a href="artigos/artigo.html">Cuidados com seu pet durante a pandemia</a>
+                        <div class="subtitulo">
+                            <p class="data"><i>14/02/2014</i></p>
+                            <span class="tag">Gatos</span>
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <img src="img/pc.jpg" alt="Gato">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, tenetur. Consequatur magnam quas delectus vel! Ducimus pariatur eveniet earum incidunt?</p>
+                        <a href="artigos/artigo.html">Ler mais</a>
+                    </div>
+                    <div class="info">
+                        <div class="autor">By <b>Maxsuel</b></div>
+                        <div class="comentarios"><b>1</b> comentário</div>   
+                    </div>
+                </article>
+                <article class="artigo">
+                    <div class="titulo">
+                        <a href="artigos/artigo.html">Lojas com acessórios para pets</a>
+                        <div class="subtitulo">
+                            <p class="data"><i>14/02/2014</i></p>
+                            <span class="tag">Cães</span>
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <img src="img/sun.jpg" alt="Cachorro">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, tenetur. Consequatur magnam quas delectus vel! Ducimus pariatur eveniet earum incidunt?</p>
+                        <a href="artigos/artigo.html    ">Ler mais</a>
+                    </div>
+                    <div class="info">
+                        <div class="autor">By <b>Maxsuel</b></div>
+                        <div class="comentarios"><b>4</b> comentários</div>   
+                    </div>
+                </article>
+            </section>
+            <aside>
+                <span>Top Posts</span>
+                <ul class="lista-top-posts">
+                    <li>
+                        <img src="./img/cat.jpg" alt="Gato">
+                        <div>
+                            <a href="./artigos/artigo.html">Adotar um gato: tudo o que você precisa saber</a>
+                            <p class="data"><i>14/02/2014</i></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/pc.jpg" alt="Pc">
+                        <div>
+                            <a href="./artigos/artigo.html">Cuidados com seu pet durante a pandemia</a>
+                            <p class="data"><i>14/02/2014</i></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/sun.jpg" alt="Cachorro">
+                        <div>
+                            <a href="./artigos/artigo.html">Lojas com acessórios para pets</a>
+                            <p class="data"><i>14/02/2014</i></p>
+                        </div>
+                    </li>
+               </ul> 
+            </aside>
+        </div>
     </main>
-
-    <aside>
-        <span>Top Posts</span>
-        <ul class="lista-top-posts">
-            <li>
-                <img src="./img/cat.jpg" alt="Gato">
-                <div>
-                    <a href="./artigos/artigo.html">Adotar um gato: tudo o que você precisa saber</a>
-                    <p class="data"><i>14/02/2014</i></p>
-                </div>
-            </li>
-            <li>
-                <img src="./img/pc.jpg" alt="Pc">
-                <div>
-                    <a href="./artigos/artigo.html">Cuidados com seu pet durante a pandemia</a>
-                    <p class="data"><i>14/02/2014</i></p>
-                </div>
-            </li>
-            <li>
-                <img src="./img/sun.jpg" alt="Cachorro">
-                <div>
-                    <a href="./artigos/artigo.html">Lojas com acessórios para pets</a>
-                    <p class="data"><i>14/02/2014</i></p>
-                </div>
-            </li>
-       </ul> 
-    </aside>
     
     <footer>
         <img src="img/logo.png" alt="logo pets blog">

@@ -43,3 +43,44 @@ aside span {
     font-size: .8rem;
     margin-top: .2rem;
 }
+
+@media only screen and (min-width: 768px) { /* Tablet */
+    aside {
+        max-width: 32%;
+        height: max-content;
+        border: 2px solid var(--cor-borda);
+        padding: 1rem 1.4rem;
+        margin: 2.6rem 2rem 2.6rem 0;
+    }
+
+    aside span {
+        font-size: .8rem;
+        margin-bottom: .2rem;
+    }
+    
+    .lista-top-posts li {
+        gap: .6rem;
+    }
+    
+    .lista-top-posts li:nth-child(2) {
+        border-top: 2px solid var(--cor-borda);
+        border-bottom: 2px solid var(--cor-borda);
+    }
+
+    .lista-top-posts li a {
+        font-size: .8rem;
+    }
+    
+    .lista-top-posts li img {
+        max-width: 45%;
+    }
+
+    .lista-top-posts li .data {
+        font-size: .6rem;
+        margin-top: .1rem;
+    }
+}
+
+@media only screen and (min-width: 991px) { /* desktop */
+
+}

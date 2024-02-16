@@ -21,11 +21,11 @@ body {
 }
 
 main {
-    padding-top: 10vh;
+    padding-top: 3.75rem;
 }
 
 .artigo {
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .artigo h2 {
@@ -94,4 +94,12 @@ main {
 
 aside {
     display: none;
+}
+
+@media only screen and (min-width: 768px) { /* Tablet */
+
+}
+
+@media only screen and (min-width: 991px) { /* desktop */
+
 }

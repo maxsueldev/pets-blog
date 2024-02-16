@@ -18,3 +18,22 @@ footer .social {
 footer .social img {
     width: 32px;
 }
+
+@media only screen and (min-width: 768px) { /* Tablet */
+    footer {
+        gap: 1rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    footer img {
+        width: 10%;
+    }
+    
+    footer .social img {
+        width: 28px;
+    }
+}
+
+@media only screen and (min-width: 991px) { /* desktop */
+
+}
