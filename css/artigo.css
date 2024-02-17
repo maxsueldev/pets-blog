@@ -24,6 +24,10 @@ main {
     padding-top: 3.75rem;
 }
 
+.artigoId {
+    display: none;
+}
+
 .artigo {
     padding: 3rem;
 }
@@ -75,7 +79,7 @@ main {
 .comentarios {
     background-color: var(--cinza);
     padding: 0 2rem;
-    margin-top: 1rem;
+    margin-top: 2.2rem;
 }
 
 .comentarios .coment {
@@ -83,9 +87,20 @@ main {
     padding: 1.2rem 0;
 }
 
+.comentarios .coment div {
+    display: flex;
+    justify-content: space-between;
+}
+
 .comentarios .coment p {
     line-height: 1.3rem;
-    margin-top: .4rem;
+    padding-left: 1.2rem;
+    margin-top: .7rem;
+}
+
+.comentarios .coment .data {
+    font-size: .9rem;
+    margin: 0;
 }
 
 .comentarios .coment:last-child {

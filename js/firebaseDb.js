@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+import { getFirestore, collection, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 
 const firebaseConfig = {
@@ -15,20 +15,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-const divComentarios = document.querySelector('#comentarios');
-const consultaComentarios = await getDocs(collection(db, "comentarios"));
-
-consultaComentarios.forEach((doc) => {
-    const novaDiv = document.createElement('div');
-        const h3 = document.createElement('h3');
-        const p = document.createElement('p');
-
-        novaDiv.classList = 'coment';
-        h3.innerText = doc.data().nome;
-        p.innerText = doc.data().mensagem;
-
-        novaDiv.appendChild(h3);
-        novaDiv.appendChild(p);
-        
-        divComentarios.appendChild(novaDiv);
-});
+export {db};
