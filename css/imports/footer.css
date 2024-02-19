@@ -11,15 +11,15 @@ footer img {
     width: 15%;
 }
 
-footer .social {
+.social {
     padding: .3rem;
 }
 
-footer .social img {
+.social img {
     width: 32px;
 }
 
-@media only screen and (min-width: 768px) { /* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {  /* Tablet */
     footer {
         gap: 1rem;
         padding-bottom: 1.2rem;
@@ -29,11 +29,22 @@ footer .social img {
         width: 10%;
     }
     
-    footer .social img {
+    .social img {
         width: 28px;
     }
 }
 
-@media only screen and (min-width: 991px) { /* desktop */
-
+@media (min-width: 1025px) {  /* Desktop */
+    footer {
+        gap: 1rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    footer img {
+        width: 7%;
+    }
+    
+    .social img {
+        width: 32px;
+    }
 }

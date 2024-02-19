@@ -9,12 +9,12 @@ const arrayComentarios = [];
 
 const consultaComentarios = await getDocs(collection(db, "comentarios"));
 
-consultaComentarios.forEach(doc => arrayComentarios.push(doc.data()));
-arrayComentarios.sort((a, b) => new Date(b.data) - new Date(a.data));
+consultaComentarios.forEach(doc => arrayComentarios.push(doc.data())); // Adiciona cada objeto de comentário em um Array
+arrayComentarios.sort((a, b) => new Date(b.data) - new Date(a.data)); // Ordena os comentários a partir da data de postagem
 
 // Carregar comentários na página
 arrayComentarios.forEach(elem => {
-    if (elem.artigo == artigoAtual) {
+    if (elem.artigo == artigoAtual) { // Mostra apenas os comentários que forem do artigo
         const novaDiv = document.createElement('div');
         const container = document.createElement('div');
         const h3 = document.createElement('h3');

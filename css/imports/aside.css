@@ -20,37 +20,37 @@ aside span {
     /* gap: 1rem; */
 }
 
-.lista-top-posts li {
+.post {
     display: var(--flex);
     gap: 1rem;
     padding: 1rem 0;
 }
 
-.lista-top-posts li:nth-child(2) {
+.post:nth-child(2) {
     border-top: 2px solid var(--bg-botoes);
     border-bottom: 2px solid var(--bg-botoes);
 }
 
-.lista-top-posts li img {
+.post img {
     max-width: 40%;
 }
 
-.lista-top-posts li a {
+.post a {
     color: var(--cor-links);
 }
 
-.lista-top-posts li .data {
+.post .data {
     font-size: .8rem;
     margin-top: .2rem;
 }
 
-@media only screen and (min-width: 768px) { /* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {  /* Tablet */
     aside {
         max-width: 32%;
         height: max-content;
         border: 2px solid var(--cor-borda);
         padding: 1rem 1.4rem;
-        margin: 2.6rem 2rem 2.6rem 0;
+        margin: 2.6rem 2rem 0 0;
     }
 
     aside span {
@@ -58,29 +58,62 @@ aside span {
         margin-bottom: .2rem;
     }
     
-    .lista-top-posts li {
+    .post {
         gap: .6rem;
     }
     
-    .lista-top-posts li:nth-child(2) {
+    .post:nth-child(2) {
         border-top: 2px solid var(--cor-borda);
         border-bottom: 2px solid var(--cor-borda);
     }
 
-    .lista-top-posts li a {
+    .post a {
         font-size: .8rem;
     }
     
-    .lista-top-posts li img {
+    .post img {
         max-width: 45%;
     }
 
-    .lista-top-posts li .data {
+    .post .data {
         font-size: .6rem;
         margin-top: .1rem;
     }
 }
 
-@media only screen and (min-width: 991px) { /* desktop */
+@media (min-width: 1025px) {  /* Desktop */
+    aside {
+        max-width: 32%;
+        height: max-content;
+        border: 2px solid var(--cor-borda);
+        padding: 1rem 1.4rem;
+        margin: 2.6rem 2rem 0 0;
+    }
 
+    aside span {
+        font-size: 1.2rem;
+        margin-bottom: .2rem;
+    }
+    
+    .post {
+        gap: .8rem;
+    }
+    
+    .post:nth-child(2) {
+        border-top: 2px solid var(--cor-borda);
+        border-bottom: 2px solid var(--cor-borda);
+    }
+
+    .post a {
+        font-size: 1rem;
+    }
+    
+    .post img {
+        max-width: 50%;
+    }
+
+    .post .data {
+        font-size: .8rem;
+        margin-top: .2rem;
+    }
 }

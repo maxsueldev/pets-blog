@@ -1,5 +1,5 @@
 header {
-    background-color: var(--cor-links);
+    background-color: red;
     height: 4.4rem;
     text-align: var(--center);
     position: fixed;
@@ -16,6 +16,15 @@ header img {
 
 .nav-list-lateral {
     display: none;
+}
+
+.nav-list-lateral li a {
+    color: var(--branco);
+    padding: .3rem 1rem;
+}
+
+.nav-list-lateral li a:hover {
+    border-bottom: .1rem solid var(--branco);
 }
 
 .hamburger {
@@ -49,7 +58,7 @@ header img {
 
 .nav-list-dropdown {
     position: fixed;
-    background-color: var(--cor-links);
+    background-color: red;
     height: 100vh;
     width: var(--width100);
     transform: translateX(100%);
@@ -73,12 +82,12 @@ header img {
 .nav-list-dropdown li a {
     color: var(--branco);
     font-family: "Dancing Script", Helvetica;
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: .2rem;
     padding: 1.3rem 3rem;
 }
 
-@media only screen and (min-width: 768px) { /* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {  /* Tablet */
     header {
         justify-content: space-between;
         padding: 0 1rem 0 2rem;
@@ -89,22 +98,23 @@ header img {
         gap: .6rem;
     }
 
-    .nav-list-lateral li a {
-        color: var(--branco);
-        padding: .3rem 1rem;
-    }
-
-    .nav-list-lateral li a:hover {
-        border-bottom: .1rem solid var(--branco);
-    }
-
     .nav-list-dropdown, .hamburger {
         display: none;
     }
 }
 
-@media only screen and (min-width: 991px) { /* desktop */
+@media (min-width: 1025px) {  /* Desktop */
     header {
-        padding: 0 4rem;
+        justify-content: space-between;
+        padding: 0 3rem 0 4rem;
+    }
+    
+    .nav-list-lateral {
+        display: flex;
+        gap: .6rem;
+    }
+
+    .nav-list-dropdown, .hamburger {
+        display: none;
     }
 }

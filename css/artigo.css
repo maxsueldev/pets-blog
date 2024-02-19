@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 @import url('./imports/reset.css');
 @import url('./imports/header.css'); 
 @import url('./imports/aside.css');  
-@import url('./imports/footer.css');                                                                                     
+@import url('./imports/footer.css');          
 
 :root {
     --width100: 100%;
@@ -23,6 +24,8 @@ body {
 main {
     padding-top: 3.75rem;
 }
+
+/* Artigo */
 
 .artigoId {
     display: none;
@@ -47,9 +50,13 @@ main {
     line-height: 1.5rem;
 }
 
+/* Compartilhamento */
+
 .share {
     padding: 0 2rem;
 }
+
+/* Formulário de comentários */
 
 .form-comentarios {
     padding: 2rem;
@@ -75,6 +82,8 @@ main {
     font-size: .9rem;
     border: none;
 }
+
+/* Comentários */
 
 .comentarios {
     background-color: var(--cinza);
@@ -111,10 +120,78 @@ aside {
     display: none;
 }
 
-@media only screen and (min-width: 768px) { /* Tablet */
-
+@media (min-width: 768px) and (max-width: 1024px) {  /* Tablet */
+    .artigo {
+        padding: 4.6rem 3rem 3rem 3rem;
+    }
+    
+    .artigo h2 {
+        font-size: 2.4rem;
+    }
+    
+    .artigo img {
+        max-width: 80%;
+        display: block;
+        margin: 1.6rem auto 2.2rem auto;
+    }
+    
+    .share {
+        padding: 0;
+    }
+    
+    .form-comentarios {
+        padding: 2rem 3rem;
+    } 
+    
+    .form-comentarios form .btn-enviar {
+        font-size: 1rem;
+    }
+    
+    .comentarios {
+        padding: .5rem 2rem;
+    }
+    
+    .comentarios .coment {
+        padding: 1.4rem 0;
+    }
 }
 
-@media only screen and (min-width: 991px) { /* desktop */
+@media (min-width: 1025px) {  /* Desktop */
+    .artigo {
+        padding: 5.2rem 4rem 3rem 4rem;
+    }
+    
+    .artigo h2 {
+        font-size: 3rem;
+    }
+    
+    .artigo img {
+        max-width: 60%;
+        display: block;
+        margin: 2rem auto 3rem auto;
+    }
 
+    .artigo p {
+        line-height: 2rem;
+    }
+    
+    .share {
+        padding: 0;
+    }
+    
+    .form-comentarios {
+        padding: 2rem 4rem;
+    } 
+    
+    .form-comentarios form .btn-enviar {
+        font-size: 1.2rem;
+    }
+    
+    .comentarios {
+        padding: 1rem 2.5rem;
+    }
+    
+    .comentarios .coment {
+        padding: 1.8rem 0;
+    }
 }
