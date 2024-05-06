@@ -28,7 +28,7 @@ main {
 h1 {
     font-family: "Dancing Script", Helvetica;
     font-size: 3rem;
-    text-align: center;
+    text-align: var(--center);
     margin-top: 2rem;
 }
 
@@ -128,7 +128,7 @@ h1 {
     }
 
     .container-flex {
-        display: flex;
+        display: var(--flex);
     }
 
     .artigos {
@@ -170,7 +170,7 @@ h1 {
     }
 
     .container-flex {
-        display: flex;
+        display: var(--flex);
     }
 
     .artigos {

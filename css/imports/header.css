@@ -41,7 +41,7 @@ header img {
     margin-bottom: 5px;
     display: block;
     background-color: var(--branco);    
-    transition: all .8s ease-in;
+    transition: all .8s ease-in;    
 }
 
 .hamburger.active .linha-hamburger:first-child {
@@ -94,7 +94,7 @@ header img {
     }
     
     .nav-list-lateral {
-        display: flex;
+        display: var(--flex);
         gap: .6rem;
     }
 
@@ -110,7 +110,7 @@ header img {
     }
     
     .nav-list-lateral {
-        display: flex;
+        display: var(--flex);
         gap: .6rem;
     }
 

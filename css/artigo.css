@@ -42,7 +42,7 @@ main {
 }
 
 .artigo img {
-    max-width: 100%;
+    max-width: var(--width100);
     margin: 1.6rem 0;
 }
 
@@ -97,7 +97,7 @@ main {
 }
 
 .comentarios .coment div {
-    display: flex;
+    display: var(--flex);
     justify-content: space-between;
 }
 

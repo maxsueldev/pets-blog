@@ -15,37 +15,41 @@ arrayComentarios.sort((a, b) => new Date(b.data) - new Date(a.data)); // Ordena 
 // Carregar comentários na página
 arrayComentarios.forEach(elem => {
     if (elem.artigo == artigoAtual) { // Mostra apenas os comentários que forem do artigo
-        const novaDiv = document.createElement('div');
-        const container = document.createElement('div');
-        const h3 = document.createElement('h3');
-        const dataElem = document.createElement('p');
-        const mensagemElem = document.createElement('p');
-
-        novaDiv.classList = 'coment';
-        dataElem.classList = 'data';
-
-        h3.innerText = elem.nome;
-        mensagemElem.innerText = elem.mensagem;
-
-        const data = new Date(elem.data);
-        let dia = data.getDate();
-        let mes = data.getMonth() + 1;
-        const ano = data.getFullYear();
-
-        if (dia < 10) dia = '0' + dia;
-        if (mes < 10) mes = '0' + mes;
-
-        const dataFormatada = dia + '/' + mes + '/' + ano;
-        dataElem.innerText = dataFormatada;
-
-        container.appendChild(h3);
-        container.appendChild(dataElem);
-
-        novaDiv.appendChild(container);
-        novaDiv.appendChild(mensagemElem);
-        divComentarios.appendChild(novaDiv);
+        createElementHTMLComment(elem);
     }
 });
+
+function createElementHTMLComment(elem) {
+    const novaDiv = document.createElement('div');
+    const container = document.createElement('div');
+    const h3 = document.createElement('h3');
+    const dataElem = document.createElement('p');
+    const mensagemElem = document.createElement('p');
+
+    novaDiv.classList = 'coment';
+    dataElem.classList = 'data';
+
+    h3.innerText = elem.nome;
+    mensagemElem.innerText = elem.mensagem;
+
+    const data = new Date(elem.data);
+    let dia = data.getDate();
+    let mes = data.getMonth() + 1;
+    const ano = data.getFullYear();
+
+    if (dia < 10) dia = '0' + dia;
+    if (mes < 10) mes = '0' + mes;
+
+    const dataFormatada = dia + '/' + mes + '/' + ano;
+    dataElem.innerText = dataFormatada;
+
+    container.appendChild(h3);
+    container.appendChild(dataElem);
+
+    novaDiv.appendChild(container);
+    novaDiv.appendChild(mensagemElem);
+    divComentarios.appendChild(novaDiv);
+}
 
 // Criar novo comentário 
 const btnEnviarFormComent = document.querySelector('#btn-enviar');
